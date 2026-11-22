@@ -26,6 +26,7 @@
   --blue:#7FA8FF;--orange:#FFAA5C;--pink:#FF8DB3;--green:#5FD08A;--purple:#B79BFF;--gray:#B5B0A8;--red:#FF8A7B;color-scheme:dark}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) h3 span{background:#FFE94A}}
 :root[data-theme="dark"] h3 span{background:#FFE94A}
+.item .th{position:absolute;left:12px;top:12px;width:72px;height:72px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.6;
@@ -46,6 +47,7 @@ ul{margin:6px 0;padding-left:20px}li{margin:4px 0}
 li ul{margin:2px 0}
 a{color:var(--link);text-decoration:underline;text-underline-offset:2px}
 .item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.item:has(.th){position:relative;padding-left:96px;min-height:96px}
 .item .top{display:flex;justify-content:space-between;gap:10px;font-weight:700}
 .item .amt{white-space:nowrap}
 .item ul{margin:6px 0 0;font-size:14.5px;color:var(--ink)}
@@ -75,17 +77,17 @@ footer{margin-top:34px;color:var(--muted);font-size:13px}
 <p class="note">내가 실제로 쓴 금액과 업체, 조건을 항목별로 정리했어요. 업체 조건은 계약 시점(2026.9) 기준이라 이용하실 일자 기준으로 꼭 다시 확인해 보세요!</p>
 
 <section class="s1"><h2>💰 1. 예산표</h2>
-<div class="item"><div class="top"><span>식대</span><span class="amt">648,000원</span></div><ul>
+<div class="item"><img class="th" src="img/sikdae.jpg" alt="" width="72" height="72" loading="lazy"><div class="top"><span>식대</span><span class="amt">648,000원</span></div><ul>
 <li><a href="https://www.lottehotel.com/mapo-city/ko/dining/restaurant-mapo-c-cafe" rel="noopener">롯데시티호텔 마포 씨카페</a></li>
 <li>대인 72,000원 × 10명 = <s>720,000원</s> → 돌잔치 10% 할인</li></ul></div>
-<div class="item"><div class="top"><span>돌상</span><span class="amt">495,000원</span></div><ul><li>우아이 돌상 (현금영수증 가능)</li></ul></div>
-<div class="item"><div class="top"><span>스냅</span><span class="amt">450,000원</span></div><ul><li>벨리떼 스냅 A상품 (원본 + 리터칭 50컷 인화형)</li></ul></div>
-<div class="item"><div class="top"><span>답례품</span><span class="amt">247,900원</span></div><ul><li><a href="https://brand.naver.com/notdam/products/635406166" rel="noopener">놋담 각인 방짜유기 수저</a> 세트 등</li></ul></div>
-<div class="item"><div class="top"><span>보자기</span><span class="amt">7,500원</span></div><ul><li><a href="https://smartstore.naver.com/woosungbo/products/11088017398" rel="noopener">우성 보자기 공단 와인 65cm 10장</a></li></ul></div>
-<div class="item"><div class="top"><span>엄마 원피스</span><span class="amt">54,000원</span></div><ul>
+<div class="item"><img class="th" src="img/dolsang.jpg" alt="" width="72" height="72" loading="lazy"><div class="top"><span>돌상</span><span class="amt">495,000원</span></div><ul><li>우아이 돌상 (현금영수증 가능)</li></ul></div>
+<div class="item"><img class="th" src="img/snap.jpg" alt="" width="72" height="72" loading="lazy"><div class="top"><span>스냅</span><span class="amt">450,000원</span></div><ul><li>벨리떼 스냅 A상품 (원본 + 리터칭 50컷 인화형)</li></ul></div>
+<div class="item"><img class="th" src="img/gift.jpg" alt="" width="72" height="72" loading="lazy"><div class="top"><span>답례품</span><span class="amt">247,900원</span></div><ul><li><a href="https://brand.naver.com/notdam/products/635406166" rel="noopener">놋담 각인 방짜유기 수저</a> 세트 등</li></ul></div>
+<div class="item"><img class="th" src="img/bojagi.jpg" alt="" width="72" height="72" loading="lazy"><div class="top"><span>보자기</span><span class="amt">7,500원</span></div><ul><li><a href="https://smartstore.naver.com/woosungbo/products/11088017398" rel="noopener">우성 보자기 공단 와인 65cm 10장</a></li></ul></div>
+<div class="item"><img class="th" src="img/dress.jpg" alt="" width="72" height="72" loading="lazy"><div class="top"><span>엄마 원피스</span><span class="amt">54,000원</span></div><ul>
 <li><a href="https://smartstore.naver.com/lottepaju37/products/13160668898" rel="noopener">라인어디션 트위드 카라 롱 원피스</a></li>
 <li><a href="https://smartstore.naver.com/lottepaju37/category/50000807" rel="noopener">롯데프리미엄 파주점 스토어</a>에서 브랜드 ‘라인’을 저렴하게 판매 중! 저렴하게 풀린 상품은 품절이 빠른 편이니 살펴보고 득템해 보세요 👗</li></ul></div>
-<div class="item"><div class="top"><span>아기 한복 (대여)</span><span class="amt">44,900원</span></div><ul><li><a href="https://smartstore.naver.com/loopyn4/products/10479253022" rel="noopener">드레한복 고급 색동한복</a></li></ul></div>
+<div class="item"><img class="th" src="img/hanbok.jpg" alt="" width="72" height="72" loading="lazy"><div class="top"><span>아기 한복 (대여)</span><span class="amt">44,900원</span></div><ul><li><a href="https://smartstore.naver.com/loopyn4/products/10479253022" rel="noopener">드레한복 고급 색동한복</a></li></ul></div>
 <div class="total"><span>합계</span><span>1,947,300원</span></div>
 <ul><li>시작할 때 <b>총 300만원을 넘기지 않기</b>로 정하고 조율했어요</li>
 <li>엄빠 헤어메이크업은 하지 않았어요 (주인공인 아기 챙기는 데 집중)</li></ul>
